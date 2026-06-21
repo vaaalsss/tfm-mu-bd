@@ -1,0 +1,38 @@
+{
+    "project": "ECG Big Data Pipeline",
+    "version": "v3-chunked",
+    "date": "2026-05-31 14:21:57.649592",
+    "config": {
+        "chunk_size": 500,
+        "max_workers": 8
+    },
+    "stats": {
+        "total_valid": 45152,
+        "total_failed": 0,
+        "null_stats": {
+            "missing_age": 55,
+            "missing_sex": 22,
+            "missing_dx": 0
+        }
+    },
+    "datasets": {
+        "deep_learning": {
+            "format": "HDF5",
+            "path": "s3://tfm-mu-bd/processed/deep_learning/dataset.h5",
+            "shape": [
+                45152,
+                12,
+                5000
+            ]
+        },
+        "machine_learning": {
+            "format": "parquet",
+            "path": "s3://tfm-mu-bd/processed/machine_learning/dataset.parquet",
+            "shape": [
+                45152,
+                78
+            ]
+        }
+    },
+    "raw_source": "s3://tfm-mu-bd/raw/"
+}
