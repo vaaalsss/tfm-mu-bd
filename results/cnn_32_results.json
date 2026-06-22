@@ -1,0 +1,29 @@
+{
+  "architecture": "CNN1D(32-64-128-128)+BiLSTM(64)+Binary",
+  "n_train": 8000,
+  "n_val": 2000,
+  "n_test": 2000,
+  "epochs_run": 28,
+  "test": {
+    "auc_roc": 0.9465,
+    "auc_pr": 0.9382,
+    "f1": 0.8186,
+    "precision": 0.944,
+    "recall": 0.7226,
+    "specificity": 0.969,
+    "cm": [
+      [
+        1124,
+        36
+      ],
+      [
+        233,
+        607
+      ]
+    ],
+    "tp": 607,
+    "tn": 1124,
+    "fp": 36,
+    "fn": 233
+  }
+}
