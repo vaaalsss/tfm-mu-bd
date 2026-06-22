@@ -1,0 +1,34 @@
+{
+  "best_params": {
+    "n_estimators": 200,
+    "min_samples_split": 5,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "max_depth": 30,
+    "bootstrap": false
+  },
+  "best_cv_auc": 0.898,
+  "test": {
+    "split": "test",
+    "auc_roc": 0.8967,
+    "auc_pr": 0.8713,
+    "f1": 0.7864,
+    "precision": 0.8256,
+    "recall": 0.7507,
+    "specificity": 0.8852,
+    "cm": [
+      [
+        3478,
+        451
+      ],
+      [
+        709,
+        2135
+      ]
+    ],
+    "tp": 2135,
+    "tn": 3478,
+    "fp": 451,
+    "fn": 709
+  }
+}
