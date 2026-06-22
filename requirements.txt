@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+boto3
+s3fs
+pyarrow
+h5py
+joblib
